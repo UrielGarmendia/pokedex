@@ -1,0 +1,24 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+/* MediaQueries */
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* Tablet: 3 tarjetas por fila */
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* Escritorio: 5 tarjetas por fila */
+  .container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+  }
+}
